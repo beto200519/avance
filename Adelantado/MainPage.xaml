@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Adelantado.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Image Source="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2025/01/google-maps-ruta-corta-4279727.jpg?tf=1200x" Aspect="AspectFill" HeightRequest="200" />
+
+            <Label Text="Ingresa una dirección:" FontAttributes="Bold" />
+            <Entry x:Name="DireccionEntry" Placeholder="Ej: Calle Falsa 123" />
+
+            <Label Text="Direcciones predeterminadas:" FontAttributes="Bold" />
+            <Label Text="1. Calle Principal 456" />
+            <Label Text="2. Avenida Secundaria 789" />
+            <Label Text="3. Plaza Central 101" />
+
+            <Button x:Name="MostrarCamposButton" Text="Agregar Ubicación" Clicked="MostrarCamposButton_Clicked" />
+
+            <StackLayout x:Name="CamposOcultos" IsVisible="False" Spacing="10">
+                <Label Text="INGRESA LA DIRECCIÓN:" FontAttributes="Bold" />
+                <Entry x:Name="DireccionCompletaEntry" Placeholder="Dirección completa" />
+
+                <Label Text="INGRESA CÓDIGO DEL DISPENSER:" FontAttributes="Bold" />
+                <Entry x:Name="CodigoDispenserEntry" Placeholder="Código del dispenser" />
+
+                <Label Text="ID DE TÉCNICO:" FontAttributes="Bold" />
+                <Entry x:Name="IdTecnicoEntry" Placeholder="ID del técnico" />
+
+                <Label Text="ID DE SUPERVISOR:" FontAttributes="Bold" />
+                <Entry x:Name="IdSupervisorEntry" Placeholder="ID del supervisor" />
+
+                <Button Text="Agregar Ubicación" Clicked="AgregarUbicacionButton_Clicked" />
+                <Button Text="Cancelar" Clicked="CancelarButton_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
