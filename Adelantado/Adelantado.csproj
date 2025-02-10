@@ -63,4 +63,22 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="9.0.30" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="login.xaml.cs">
+	    <DependentUpon>Login.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="perfil.xaml.cs">
+	    <DependentUpon>Perfil.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Perfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

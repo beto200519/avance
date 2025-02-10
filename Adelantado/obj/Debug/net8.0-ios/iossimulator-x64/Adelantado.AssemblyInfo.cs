@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Adelantado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6a8664220afafc1e3eeb09b8aa995f78d23d9c17")]
 [assembly: System.Reflection.AssemblyProductAttribute("Adelantado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Adelantado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
